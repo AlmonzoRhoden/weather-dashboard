@@ -3,7 +3,7 @@
 // Variables 
 var searchButton = $(".searchButton");
 
-var apiKey = "a7b69886ea1302d5df9e25a4e47e8b66"; /* Zo's unique API key */
+var apiKey = "d1747594bf309d34f5886c62ae9bf608"; /* Zo's unique API key */
 
 // Forloop for persisting the data onto HMTL page
 for (var i = 0; i < localStorage.length; i++) {
