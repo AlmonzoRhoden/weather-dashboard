@@ -64,7 +64,7 @@ searchButton.click(function () {
             currentTemp.append("<p>" + "Wind Speed: " + response.wind.speed + "</p>");
 
             // UV Index URL
-            var urlUV = `https://api.openweathermap.org/data/2.5/uvi?appid=a7b69886ea1302d5df9e25a4e47e8b66=${response.coord.lat}&lon=${response.coord.lon}`;
+            var urlUV = `https://api.openweathermap.org/data/2.5/uvi?appid=d1747594bf309d34f5886c62ae9bf608=${response.coord.lat}&lon=${response.coord.lon}`;
 
             // UV Index
             $.ajax({
