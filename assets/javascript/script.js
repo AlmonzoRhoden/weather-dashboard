@@ -20,12 +20,17 @@ var keyCount = 0;
 searchButton.click(function () {
 
     var searchInput = $(".searchInput").val();
+ 
+   
+    
+    // if/then statement
+    var urlCurrent = isNaN(parseInt(searchInput))? "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&Appid=" + apiKey + "&units=imperial"
 
-    // Variable for current weather working 
-    var urlCurrent = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&Appid=" + apiKey + "&units=imperial";
-    // Variable for 5 day forecast working
-    var urlFiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchInput + "&Appid=" + apiKey + "&units=imperial";
+    :"https://api.openweathermap.org/data/2.5/weather?zip=" + searchInput + "&Appid=" + apiKey + "&units=imperial";
 
+    var urlFiveDay = isNaN(parseInt(searchInput))? "https://api.openweathermap.org/data/2.5/forecast?q=" + searchInput + "&Appid=" + apiKey + "&units=imperial"
+
+    : "https://api.openweathermap.org/data/2.5/forecast?zip=" + searchInput + "&Appid=" + apiKey + "&units=imperial";
 
     if (searchInput == "") {
         console.log(searchInput);
