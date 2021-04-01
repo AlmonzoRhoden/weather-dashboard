@@ -1,4 +1,4 @@
-<h1 align = "center" > Weather-Dashboard </h1>
+<h1 align = "center" > Weather-Dashboard</h1>
 
 <h2>Preview of deployed application<h2>
  
