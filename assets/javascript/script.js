@@ -1,9 +1,14 @@
 /* Zo's Javascript */
 
+
 // Variables 
 var searchButton = $(".searchButton");
 
 var apiKey = "d1747594bf309d34f5886c62ae9bf608"; /* Zo's unique API key */
+
+// Setting volume level of bgm
+var audio = document.getElementById("myaudio");
+audio.volume = 0.2;
 
 // Forloop for persisting the data onto HMTL page
 for (var i = 0; i < localStorage.length; i++) {
