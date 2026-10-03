@@ -1,11 +1,11 @@
-<!Doctype HTML>
+<!Doctype html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv= "X-UA-Compatible" content="ie=edge" />
     <meta name="keywords" content="web developer,almonzo rhoden, html, css, javascript, bootstrap,weatherApp, responsive design, github">
     <meta name="description" content="An application that uses Open Weather Map API, that incorporates data into a created weather-dashboard website to show weather forecast.">
     <meta content="Almonzo Rhoden | Weather Dashboard App" property="og:title">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <!--Almonzo's custom favicon-->
-   <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/gif" sizes="16x16">
+   <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/gif" sizes="32x32">
 
     <title>Almonzo Rhoden | Weather Dashboard App</title>
     
@@ -107,11 +107,12 @@
         </div>
         
 
-    <!-- JavaScript -->
+    
+        <!-- JavaScript -->
     <script src="./assets/javascript/script.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
 
     <!-- Footer section start -->
     <div class="card">
@@ -120,7 +121,7 @@
           <footer><strong>
   
               © <span id="footer-year"></span> Almonzo Rhoden &nbsp;
-  
+                <script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
               <!-- Bootstrap github icon - Linkedin -->
               <a href="https://github.com/AlmonzoRhoden" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="white" class="bi bi-github" viewBox="0 0 16 16">

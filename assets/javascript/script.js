@@ -1,8 +1,5 @@
 /* Zo's Javascript */
 
-//Footer automation code
-document.getElementById("footer-year").textContent = new Date().getFullYear();
-
 // Variables 
 var searchButton = $(".searchButton");
 
@@ -11,6 +8,7 @@ var apiKey = "d1747594bf309d34f5886c62ae9bf608"; /* Zo's unique API key */
 // Setting volume level of bgm
 var audio = document.getElementById("myaudio");
 audio.volume = 0.2;
+
 
 // Forloop for persisting the data onto HMTL page
 for (var i = 0; i < localStorage.length; i++) {
@@ -27,8 +25,6 @@ var keyCount = 0;
 searchButton.click(function () {
 
     var searchInput = $(".searchInput").val();
- 
-   
     
     // if/then statement
     var urlCurrent = isNaN(parseInt(searchInput))? "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&Appid=" + apiKey + "&units=imperial"

@@ -45,11 +45,12 @@ footer{
   
   footer img{
     width: 30px;
-    border-radius: 10p
+    border-radius: 10px;
     height: 30px;
     background: rgb(221, 221, 221);
     border: 1px solid black;
     border-radius: 5px;
+    position: relative;
   }
 
   .git-image{
