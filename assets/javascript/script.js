@@ -1,5 +1,7 @@
 /* Zo's Javascript */
 
+//Footer automation code
+document.getElementById("footer-year").textContent = new Date().getFullYear();
 
 // Variables 
 var searchButton = $(".searchButton");
@@ -114,5 +116,3 @@ searchButton.click(function () {
     }
 });
 
-//Footer automation code
-document.getElementById("footer-year").textContent = new Date().getFullYear();
