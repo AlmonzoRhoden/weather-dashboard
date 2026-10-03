@@ -37,7 +37,6 @@ footer{
     background-color: #1E90FF;
     padding: 5px;
     width: 25%;
-    position: absolute;
     left: 500px;
     top: 60px;
     border-radius: 10px;
@@ -65,4 +64,10 @@ footer{
        height: 30px;
        max-width: auto;
        height: auto;
+   }
+
+   .card{
+    margin:auto;
+    width: auto;
+    text-align: center;
    }
